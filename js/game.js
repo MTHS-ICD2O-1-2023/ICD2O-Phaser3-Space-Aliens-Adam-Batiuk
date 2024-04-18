@@ -21,7 +21,7 @@ const config = {
   scale: {
     made: Phaser.Scale.FIT,
     // place in middle
-    autoCenter: Phaser.Scale.CENTER_BOTH
+    autoCenter: Phaser.Scale.CENTER_BOTH,
   },
 }
 
