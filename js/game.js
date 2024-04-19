@@ -4,6 +4,12 @@
 // Created on April 17 2023
 // game config
 
+// scene import
+import SplashScene from "./splashScene.js"
+
+// create the new scenes
+const splashScene = new SplashScene()
+
 /**
  * Start Phaser Game.
  */
@@ -26,4 +32,10 @@ const config = {
 }
 
 const game = new Phaser.Game(config)
-console.log(game)
+// console.log(game)
+
+// load scenes
+game.scene.add("splashScene", splashScene)
+
+// the star scene
+game.scene.start("splashScene")
