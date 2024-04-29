@@ -2,17 +2,17 @@
 
 // Created by Adam Batiuk
 // Created on April 17 2023
-// This is a Title Scene
+// This is the Menu Scene
 
 /**
- * This class is the Titlt Scene.
+ * This class is the Menu Scene
  */
-class TitleScene extends Phaser.Scene {
+class MenuScene extends Phaser.Scene {
   /**
    * This method is the construtor
    */
   constructor() {
-    super({ key: "titleScene" })
+    super({ key: "menuScene" })
   }
 
   /**
@@ -30,7 +30,7 @@ class TitleScene extends Phaser.Scene {
    * Use to load assets.
    */
   preload() {
-    console.log("Title Scene")
+    console.log("Menu Scene")
   }
 
   /**
@@ -53,4 +53,4 @@ class TitleScene extends Phaser.Scene {
   }
 }
 
-export default TitleScene
+export default MenuScene
