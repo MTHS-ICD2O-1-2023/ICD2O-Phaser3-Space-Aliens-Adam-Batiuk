@@ -20,7 +20,8 @@ const menuScene = new MenuScene()
 const config = {
   type: Phaser.AUTO,
   width: 1920,
-  height: {
+  height: 1080,
+  physics: {
     default: "arcade",
     arcade: {
       debug: true,
@@ -41,6 +42,7 @@ const game = new Phaser.Game(config)
 // load scenes
 game.scene.add("splashScene", splashScene)
 game.scene.add("titleScene", titleScene)
+game.scene.add("menuScene", menuScene)
 
 // the star scene
 game.scene.start("splashScene")
