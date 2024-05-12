@@ -1,5 +1,13 @@
 /* global Phaser */
 
+// created by Adam
+// created on May 12 2024
+
+import SplashScene from './splashScene.js'
+
+// out game scene
+const splashScene = new SplashScene()
+
 const config = {
   type: Phaser.AUTO,
   width: 1920,
@@ -19,4 +27,10 @@ const config = {
 }
 
 const game = new Phaser.Game(config)
-console.log(game)
+
+// load scenes
+// 'key' can not be reused
+game.scene.add('splashScene', splashScene)
+
+// start title
+game.scene.start('splashScene')
