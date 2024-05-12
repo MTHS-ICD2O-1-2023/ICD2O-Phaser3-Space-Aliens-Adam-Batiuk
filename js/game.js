@@ -4,9 +4,11 @@
 // created on May 12 2024
 
 import SplashScene from './splashScene.js'
+import TitleScene from './titleScene.js'
 
 // out game scene
 const splashScene = new SplashScene()
+const titleScene = new TitleScene()
 
 const config = {
   type: Phaser.AUTO,
@@ -31,6 +33,7 @@ const game = new Phaser.Game(config)
 // load scenes
 // 'key' can not be reused
 game.scene.add('splashScene', splashScene)
+game.scene.add('titleScene', titleScene)
 
 // start title
 game.scene.start('splashScene')
