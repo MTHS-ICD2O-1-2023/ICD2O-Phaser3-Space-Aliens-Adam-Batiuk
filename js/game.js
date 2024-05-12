@@ -18,7 +18,7 @@ const config = {
       debug: true
     }
   },
-  // set beckground color
+  // set background color
   backgroundColor: 0x5f6e7a,
   scale: {
     mode: Phaser.Scale.FIT,
